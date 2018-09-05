@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">My Ship</string>
+    <string name="sign_up">Đăng Ký</string>
+    <string name="log_in">Đăng Nhập</string>
+    <string name="Email">Email</string>
+    <string name="password">Mật Khẩu</string>
+    <string name="forgot_pass">Quên Mật Khẩu</string>
+    <string name="loginwith">Đăng nhập bằng tài khoản khác</string>
+</resources>
