@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:scrollbars="none">
+    android:scrollbars="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="85dp"
                 android:src="@drawable/logo2" />
         </LinearLayout>
 
@@ -28,26 +28,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_marginBottom="10dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/edLoginUser"
+                android:id="@+id/edForgotUser"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginBottom="15dp"
-                android:hint="@string/Email"
+                android:hint="@string/tentaikhoan"
                 android:paddingLeft="10dp"
                 android:textColor="@color/black" />
 
+
             <EditText
-                android:id="@+id/edLoginPass"
+                android:id="@+id/edForgotPhone"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginBottom="15dp"
-                android:hint="@string/password"
+
+                android:hint="@string/phone"
                 android:inputType="textPassword"
                 android:paddingLeft="10dp"
                 android:textColor="@color/black" />
@@ -55,44 +56,15 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
                 android:background="@drawable/duongvien_goctron"
-                android:onClick="onclickLogin"
-                android:text="@string/log_in"
+                android:onClick="ocClickXacNhan"
+                android:text="@string/xac_nhan"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="20dp" />
 
-
-            <com.facebook.login.widget.LoginButton
-                android:id="@+id/login_facebook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp" />
-
-
-            <TextView
-                android:onClick="onClickSignUp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/sign_up"
-                android:textColor="#357493" />
 
         </LinearLayout>
-
-
-        <TextView
-            android:onClick="onClickFogotpass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_margin="5dp"
-            android:text="@string/forgot_pass"
-            android:textColor="#e82337" />
 
 
     </RelativeLayout>
